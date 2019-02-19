@@ -1,0 +1,42 @@
+create database msajce;
+
+use msajce;
+create table cse(
+    id int(5) not null,
+    name varchar(20) not null,
+    email varchar(30) not null ,
+    age int(3) not null ,
+    sex varchar(10) not null
+    );
+insert into cse values('001','arun','arun@gmail.com','20','male');
+insert into cse values('002','prasanth','prasanth@gmail.com','18','male');
+insert into cse values('003','krishna','krishna@gmail.com','17','male');
+insert into cse values('004','daksha','daksha@gmail.com','16','female');
+
+create table mech (
+   id int(5) not null,
+    name varchar(20) not null,
+    email varchar(30) not null ,
+    age int(3) not null ,
+    sex varchar(10) not null
+    );
+insert into mech values('011','arun','arun@gmail.com','20','male');
+insert into mech values('012','prasanth','prasanth@gmail.com','18','male');
+insert into mech values('013','krishna','krishna@gmail.com','17','male');
+insert into mech values('014','daksha','daksha@gmail.com','16','female');
+
+create table IT(
+    id int(5) not null,
+    name varchar(20) not null,
+    email varchar(30) not null ,
+    age int(3) not null ,
+    sex varchar(10) not null
+    );
+insert into IT values('021','arun','arun@gmail.com','20','male');
+insert into IT values('022','prasanth','prasanth@gmail.com','18','male');
+insert into IT values('023','krishna','krishna@gmail.com','17','male');
+insert into IT values('024','daksha','daksha@gmail.com','16','female');
+
+select * from cse;
+update cse set name='ragul' where id=002;
+select * from cse;
