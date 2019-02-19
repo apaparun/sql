@@ -1,0 +1,50 @@
+create database student;
+create database employee;
+create database production;
+use student;
+create table stdinfo(
+    name varchar(20) not null,
+    email varchar(30) not null ,
+    age int(3) not null ,
+    sex varchar(10) not null,
+    mobile int(12) not null,
+    city varchar(20) 
+    );
+insert into stdinfo values('arun','arun@gmail.com','20','male','234567','chennai');
+insert into stdinfo values('prasanth','prasanth@gmail.com','18','male','223347','maduai');
+
+show databases;
+show tables;
+use employee;
+create table employeeinfo(
+    name varchar(20) not null,
+    email varchar(30) not null ,
+    age int(3) not null ,
+    sex varchar(10) not null,
+    mobile int(12) not null,
+    city varchar(20) 
+    );
+insert into employeeinfo values('arunap','arunap@gmail.com','20','male','234567','chennai');
+insert into employeeinfo values('prasanth ap','prasanth@gmail.com','18','male','223347','maduai');
+
+show databases;
+show tables;
+use production;
+create table productioninfo(
+    id int(20) not null,
+    mfddate int(30) not null ,
+    expdate int(3) not null ,
+    batchno int(10) not null,
+    product_name varchar(12) not null
+    );
+insert into productioninfo values('123','120119','120120','2','food');
+insert into productioninfo values('124','120119','120120','3','food');
+
+show databases;
+show tables;
+
+use student;
+drop table stdinfo;
+
+use production;
+alter table productioninfo add mrp int;
