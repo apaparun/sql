@@ -1,0 +1,14 @@
+create database students_info;
+use students_info;
+create table student(
+    id int(5) not null,
+    name varchar(30) not null,
+    age int(3) not null,
+    sex varchar(5)not null
+);
+insert into student value('001','arun','16','m');
+insert into student value('002','krishna','5','m');
+insert into student value('003','ragul','10','m');
+insert into student value('001','dhaksha','4','f');
+select count(*) from student;
+select distinct(sex) from student;
