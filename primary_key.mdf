@@ -1,0 +1,9 @@
+create database company;
+use company;
+create table employee(
+    id int(5) not null,
+    name varchar(30) not null,
+    age int(3),
+    primary key(id)
+);
+desc employee;
