@@ -1,0 +1,18 @@
+create database employee_info;
+use employee_info;
+create table employee(
+    id int(5) not null,
+    name varchar(30) not null,
+    age int(3) not null,
+    address varchar(20)not null,
+    salary varchar(10) not null
+);
+insert into employee value('1','Ramesh','32','Ahmedabad','2000');
+insert into employee value('2','Khilan','25','Delhi','1500');
+insert into employee value('3','kaushik','23','Kota','2000');
+insert into employee value('4','Chaitali','25','Mumbai','6500');
+insert into employee value('5','Hardik','27','Bhopal','8500');
+insert into employee value('6','Komal','22','MP','4500');
+insert into employee value('7','Muffy','24','Indore','10000');
+update employee set address='maharashtra' where name='komal';
+select * from employee;
